@@ -34,7 +34,7 @@ export class AppComponent {
     const completion = await openai.createCompletion({
      model: "text-davinci-003",
      temperature:0.2,
-     max_tokens:2024,
+     max_tokens:1024,
      prompt: prompt,
    });
         this.reviewText=completion.data.choices[0].text;
