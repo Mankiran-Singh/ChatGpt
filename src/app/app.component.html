@@ -1,0 +1,16 @@
+<body>
+  <img [src]="'../assets/icon.png'"><h3>ChatGPT</h3>
+  <input type="file" class="file-input"
+       (change)="onFileSelected($event)" #fileUpload>
+
+<div class="file-upload">
+
+   <h4>{{fileName || "No file uploaded yet."}}</h4>
+
+    <button mat-mini-fab color="primary" class="upload-btn"
+      (click)="fileUpload.click()">
+        <mat-icon>attach_file</mat-icon>
+    </button>
+</div>
+<textarea>{{reviewText}}</textarea>
+</body>
