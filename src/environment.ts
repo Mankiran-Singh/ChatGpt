@@ -1,3 +1,3 @@
 export const environment={
-  OPEN_AI_API_KEY:'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'
+  OPEN_AI_API_KEY:'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'
 }
