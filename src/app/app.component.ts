@@ -11,7 +11,6 @@ export class AppComponent {
   fileName = '';
 
   reviewText:any;
-
   onFileSelected(event:any) {
       const file:File = event.target.files[0];
       let fileReader=new FileReader();
